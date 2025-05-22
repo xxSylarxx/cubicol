@@ -772,6 +772,20 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                 <div class="carousel-item active">
                     <div class="titleContainer container">
                         <div class="animate__animated animate__fadeInLeft">
+                            <h2 class="title">¡Ganadores del Premio <br> Empresa Peruana del año 2024!</h2>
+                            <h2 class="title2">
+                                En Cubicol, estamos orgullosos de haber sido reconocidos <br> como  la mejor Plataforma de Gestión Educativa del año. </b>
+                            </h2>
+                            <div class="mt-4 mt-md-5">
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Solicita tu demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./public/img/banner/banner-cubicol.jpg">
+                </div>
+                <!-- <div class="carousel-item">
+                    <div class="titleContainer container">
+                        <div class="animate__animated animate__fadeInLeft">
                             <h2 class="title">La plataforma número 1 <br> en Gestión Educativa</h2>
                             <h2 class="title2">
                                 ¡Sé parte de una nueva experiencia en <b> gestión educativa </b>! <br>
@@ -784,8 +798,9 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                         </div>
                     </div>
                     <img src="./public/img/banner/1.jpg">
-                </div>
-                <div class="carousel-item">
+                </div> -->
+                
+                <!-- <div class="carousel-item">
                     <div class="titleContainer container">
                         <div class="animate__animated animate__fadeInLeft">
                             <h2 class="title">Conoce nuestra <br> Agencia Publicitaria</h2>
@@ -795,22 +810,22 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                                 en el mundo digital, así como manejar tus redes sociales.
                             </h2>
                             <div class="mt-4 mt-md-5">
-                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Conoce nuestra área </a>
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Conoce nuestra área </a> -->
                                 <!-- <a class="btn" href="https://api.whatsapp.com/send?phone=51" target="_blank">Contáctanos</a> -->
-                            </div>
+                           <!--  </div>
                         </div>
                     </div>
                     <img src="./public/img/banner/2.jpg">
-                </div>
+                </div> -->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
     </div>
 
@@ -1033,7 +1048,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                     <div class="row justify-content-around gap-4">
                         <div class="col-lg-5 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                             <div class="d-flex">
-                                <div class="contador_cantidad text-center" data-cantidad-total="800">700</div>
+                                <div class="contador_cantidad text-center" data-cantidad-total="1200">700</div>
                                 <div>
                                     <i class="fas fa-plus"></i>
                                 </div>
@@ -1044,7 +1059,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                         </div>
                         <div class="col-lg-5 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                             <div class="d-flex">
-                                <div class="contador_cantidad text-center" data-cantidad-total="14">0</div>
+                                <div class="contador_cantidad text-center" data-cantidad-total="15">0</div>
                                 <div>
                                     <i class="fas fa-plus"></i>
                                 </div>
@@ -1184,7 +1199,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <img style="border-radius: 10px;" src="./public/img/web/800.png" height="80" alt="">
+                    <img style="border-radius: 10px;" src="./public/img/web/1200.png" height="80" alt="">
                     <div class="d-flex justify-content-center my-4">
                         <span class="line"></span>
                         <span class="line-white"></span>
@@ -1259,7 +1274,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
         </div>
     </div>
 
-    <div class="container-fluid bg-white">
+    <!-- <div class="container-fluid bg-white">
         <div class="container" id="partners">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
@@ -1270,9 +1285,9 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                         <span class="line-white"></span>
                         <span class="line"></span>
                     </div>
-                    <h2 class="mt-5">Partners Cubicol</h2>
+                    <h2 class="mt-5">Partners Cubicol</h2> -->
                     <!-- <p>Confían en Cubicol</p> -->
-                </div>
+               <!--  </div>
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-lg">
@@ -1299,7 +1314,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container-fluid" id="prefootServicios">
         <div class="container">

@@ -624,7 +624,7 @@
         <div class="row justify-content-around" data-aos="fade-down">
             <div class="col-lg-2 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                 <div class="d-flex">
-                    <div class="contador_cantidad text-center" data-cantidad-total="800">700</div>
+                    <div class="contador_cantidad text-center" data-cantidad-total="1200">700</div>
                     <div>
                         <i class="fas fa-plus"></i>
                     </div>
@@ -635,7 +635,7 @@
             </div>
             <div class="col-lg-2 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                 <div class="d-flex">
-                    <div class="contador_cantidad text-center" data-cantidad-total="14">0</div>
+                    <div class="contador_cantidad text-center" data-cantidad-total="15">0</div>
                     <div>
                         <i class="fas fa-plus"></i>
                     </div>

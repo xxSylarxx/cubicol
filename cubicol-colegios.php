@@ -465,7 +465,7 @@
             overflow: hidden;
             text-align: justify;
             color: #555;
-            font-size: 15px;
+            font-size: 15px;z
             line-height: 1.6;
         }
 
