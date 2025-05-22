@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap');
+/* font-family: 'Nunito Sans', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&display=swap');
+/* font-family: 'Mulish', sans-serif; */
+
+:root{
+  --color1: #A220D5;
+  --color2: #3A34FF;
+  --color3: #00BEFF;
+}
+
+
+/* @font-face {
+  font-family: 'Helvetica';
+  src: url('NeueHelveticaBQHeavy.otf') format('otf');
+  } */
+
+
+body{
+ font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  color: #6E6E6E;
+}
+
+h1,
+h2{
+    font-weight: 900;
+    color: #29306B;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+h3, h4, h5{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.crop{
+  object-fit: cover;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+
+.grow {
+  transition: .5s, color .10s;
+  -webkit-transition: .5s, color .10s;
+  -moz-transition: .5s, color .10s;
+}
+
+.grow:hover {
+  transform: scale3d(1.10, 1.10, 0.3);
+  -webkit-transform: scale3d(1.10, 1.10, 0.3);
+  -moz-transform: scale3d(1.10, 1.10, 0.3);
+}
+
+.line {
+  width: 10px;
+  height: 3px;
+  background: var(--color2);
+}
+
+.line-white {
+  width: 10px;
+  height: 3px;
+  background: #fff;
+}
+
+.line2 {
+  width: 40px;
+  height: 3px;
+  background: var(--color2);
+}
+
+div.pre-load {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+    z-index: 99000;
+    background: linear-gradient(-45deg, #9B0FD3, #8f96aa, #06cde7);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+
+.aviso-cookies{
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 10%;
+  background: #fff;
+  padding: 30px 36px;
+  border-radius: 20px;
+  box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);
+  z-index: 2000;
+  width: calc(100% - 20%);
+}
+
+.aviso-cookies.activo{
+  display: flex;
+}
+
+
+.aviso-cookies p{
+  width: 68%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #606060;
+}
+
+.aviso-cookies .container-modal-cookies-btns{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.aviso-cookies .container-modal-cookies-btns .btn-politics-cookies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding: 0 20px;
+  height: 50px;
+  border-radius: 100px;
+  transition: 0.3s all;
+  border: 1px solid var(--color1);
+  background-color: transparent;
+  color: var(--color1);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.aviso-cookies .container-modal-cookies-btns .btn-politics-cookies:hover {
+  background-color: rgb(193 1 203 / 10%);
+}
+
+.aviso-cookies .container-modal-cookies-btns .btn-acept-cookies {
+  background-color: var(--color2);
+  font-weight: bold;
+  box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  padding-top: 3px;
+  height: 50px;
+  border-radius: 100px;
+  transition: 0.3s all; 
+  font-size: 16px;
+  border: none;
+}
+
+.aviso-cookies .container-modal-cookies-btns .btn-acept-cookies:hover{
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.fondo-aviso-cookies{
+  display: none;
+  /* background: rgba(0, 0, 0, .20); */
+  /* background: rgba(0, 0, 0, .50); */
+  background: rgba(255, 255, 255, .75);
+  position: fixed;
+  z-index: 1999;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fondo-aviso-cookies.activo{
+  display: block;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@media (min-width: 1400px){
+  .container{
+    max-width: 1100px;
+  }
+}
+
+
+
+/* #header {
+   -moz-box-shadow: 0 3px 3px rgba(190, 190, 190, 0.75);
+ -webkit-box-shadow: 0 3px 3px rgba(190, 190, 190, 0.75);
+ box-shadow: 0 3px 3px rgba(190, 190, 190, 0.75);
+ box-shadow: 0 3px 3px rgb(94 94 94 / 75%);
+} */
+  
+#header .barsup {
+  font-size: 13px;
+  padding: 10px 7%;
+  border-bottom: 1px solid rgba(143,143,143,0.4);
+  /* background: var(--color3); */
+}
+
+#header .barsup .contact-item a{
+  color: #FCFCFC;
+}
+
+#header .barsup .contact-item a i{
+  font-size: 16px;
+}
+
+#header .barsup .mininav a{
+  color: #f4f4f4;
+  display: flex;
+}
+
+#header .barsup .mininav a i{
+  font-size: 16px;
+}
+
+#header .barsup .mininav .mininav-item{
+  margin: 0 10px;
+}
+
+/* #header .navbar {
+  background: rgb(0 0 0 / 100%);
+} */
+
+#header .navbar .logo1{
+  width: 230px;
+}
+
+#header .navbar .nav-item{
+  margin: 7px 6px;
+  display: flex;
+  align-items: center;
+}
+
+
+#header .dropdown-item{
+  font-weight: bold;
+}
+
+#header .dropdown-item:focus, #header .dropdown-item:hover{
+  background-color: var(--color3);
+
+}
+
+#header .navbar-light .navbar-nav .nav-link{
+  color: white;
+  font-size: 16px;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#footer {
+  /* background: var(--color2); */
+  background: #000;
+  padding: 4rem 0 0;
+  position: relative; 
+}
+
+
+#footer .title{
+ font-family: 'Nunito Sans', sans-serif;
+}
+
+@media (max-width: 500px) { 
+
+  .aviso-cookies.activo{
+    flex-direction: column;
+  }
+  .aviso-cookies p{
+    font-size: 14px;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .aviso-cookies .container-modal-cookies-btns{
+    flex-direction: column;
+  }
+
+  #header .navbar .navbar-brand .logo1{
+    width: 120px;
+  }
+
+  #header .navbar .navbar-brand .logo2{
+    width: 80px;
+  }
+
+  #navbarNav{
+    background: var(--color2);
+  }
+
+  /* #header .navbar {
+    background-color: var(--color2);
+  } */
+
+  #header .barsup .mininav .mininav-item span{
+    display: none;
+  }
+
+  /* #header .barsup {
+    background: rgb(162 32 213 / 52%);
+  } */
+
+}
+
+
+
+
