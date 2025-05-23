@@ -284,7 +284,7 @@ div.pre-load {
  font-family: 'Nunito Sans', sans-serif;
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 769px) { 
 
   .aviso-cookies.activo{
     flex-direction: column;

@@ -2,23 +2,32 @@
 <html lang="es">
 
 <head>
-	<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1585956215157863');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1585956215157863');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,19 +64,20 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
             position: absolute;
             /* left: 10%; */
             /* padding-left: 10%; */
-            left: 0;
-            right: 0;
+
+            left: 10%;
+            bottom: 10%;
             display: flex;
             justify-content: start;
             align-items: end;
-            height: 100%;
+            height: 50%;
             padding-bottom: 2%;
+            z-index: 99;
         }
 
         #slider .titleContainer .title {
             font-size: 40px;
-            color: #fff;    
-            margin-top: -25rem;
+            color: #fff;
         }
 
         #slider .titleContainer .title2 {
@@ -96,11 +106,11 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
 
         #slider img {
             width: 100%;
-            height: 730px; 
+            /* height: 730px;  */
             object-fit: cover;
-            object-position: top;
+            object-position: center;
             /* height: 100%; */
-            /* height: 100vh; */
+            height: 100vh;
         }
 
 
@@ -705,18 +715,33 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
             }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 700px) {
             #slider .titleContainer {
-                padding-bottom: 20%;
-                background: rgb(162 32 213 / 20%);
+                position: absolute;
+                left: 5%;
+                top: -20px;
+                width: 100%;
+               /*  background: rgb(162 32 213 / 20%); */
+                height: 100%;
+
             }
+
 
             #slider img {
                 object-position: right;
+                height: auto;
             }
 
             #slider .titleContainer .title {
-                font-size: 30px;
+                font-size: 1rem;
+            }
+
+            #slider .titleContainer .title2 {
+                display: none;
+            }
+
+            #slider .btn {
+                padding: 5px 10px;
             }
 
             #migrar {
@@ -736,6 +761,27 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                 font-size: 40px;
             }
 
+        }
+
+        @media screen and (min-width: 703px) and (max-width: 900px) {
+            #slider .titleContainer .title {
+                font-size: 1rem;
+            }
+
+            #slider .titleContainer .title2 {
+                font-size: .95rem;
+            }
+
+        }
+
+        @media screen and (min-width: 901px) and (max-width: 1360px) {
+            #slider .titleContainer .title {
+                font-size: 1.7rem;
+            }
+
+            #slider .titleContainer .title2 {
+                font-size: .95rem;
+            }
         }
 
         div[id] {
@@ -767,7 +813,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
 
     <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
-    <div class="container-fluid px-0" id="slider">
+    <div class="container-fluid px-0" id="slider" style="position: relative;">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -775,7 +821,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                         <div class="animate__animated animate__fadeInLeft">
                             <h2 class="title">¡Ganadores del Premio <br> Empresa Peruana del año 2024!</h2>
                             <h2 class="title2">
-                                En Cubicol, estamos orgullosos de haber sido reconocidos <br> como  la mejor Plataforma de Gestión Educativa del año. </b>
+                                En Cubicol, estamos orgullosos de haber sido reconocidos <br> como la mejor Plataforma de Gestión Educativa del año. </b>
                             </h2>
                             <div class="mt-4 mt-md-5">
                                 <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Más Información</a>
@@ -800,7 +846,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                     </div>
                     <img src="./public/img/banner/1.jpg">
                 </div> -->
-                
+
                 <!-- <div class="carousel-item">
                     <div class="titleContainer container">
                         <div class="animate__animated animate__fadeInLeft">
@@ -812,8 +858,8 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                             </h2>
                             <div class="mt-4 mt-md-5">
                                 <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Conoce nuestra área </a> -->
-                                <!-- <a class="btn" href="https://api.whatsapp.com/send?phone=51" target="_blank">Contáctanos</a> -->
-                           <!--  </div>
+                <!-- <a class="btn" href="https://api.whatsapp.com/send?phone=51" target="_blank">Contáctanos</a> -->
+                <!--  </div>
                         </div>
                     </div>
                     <img src="./public/img/banner/2.jpg">
@@ -1287,8 +1333,8 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                         <span class="line"></span>
                     </div>
                     <h2 class="mt-5">Partners Cubicol</h2> -->
-                    <!-- <p>Confían en Cubicol</p> -->
-               <!--  </div>
+    <!-- <p>Confían en Cubicol</p> -->
+    <!--  </div>
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-lg">

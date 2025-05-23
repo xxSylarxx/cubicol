@@ -16,7 +16,7 @@
             <div>&nbsp;</div>
             <div><strong>Un proceso de evaluaci&oacute;n exigente y competitivo</strong><br />&nbsp;<br />Pasamos por un riguroso proceso de evaluaci&oacute;n, donde se analizaron diversos indicadores relacionados con gesti&oacute;n, innovaci&oacute;n, impacto social, liderazgo estrat&eacute;gico, talento humano, y sostenibilidad.<br />Nos llena de orgullo saber que <strong>cumplimos con todos los requisitos exigidos</strong> para obtener el premio en una categor&iacute;a tan significativa para nosotros: <strong>la de Plataforma de Gesti&oacute;n Educativa.</strong><br /><br /></div>
             <div>&nbsp;</div>
-            <div><img style="display: block; margin-left: auto; margin-right: auto;" src="../../public/img/galeria/1_1.jpg" width="85%" /></div>
+            <div><img style="display: block; margin-left: auto; margin-right: auto;" src="public/img/galeria/1_1.jpg" width="85%" /></div>
             <div>&nbsp;</div>
             <div><strong>&iquest;Por qu&eacute; este premio es tan significativo?</strong></div>
             <div><br />Porque no se trata solo de una estatuilla o un diploma. Se trata del reflejo de una comunidad que, apuesta por el cambio, por la mejora continua y por una gesti&oacute;n educativa m&aacute;s eficiente, moderna y humana. En Cubicol, cada avance que logramos se construye con base en la confianza de <strong>directores, docentes, promotores y personal administrativo</strong> que d&iacute;a a d&iacute;a usan nuestra plataforma para transformar la gesti&oacute;n educativa.</div>
