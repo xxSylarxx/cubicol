@@ -307,9 +307,9 @@ div.pre-load {
     width: 80px;
   }
 
-  #navbarNav{
+  /* #navbarNav{
     background: var(--color2);
-  }
+  } */
 
   /* #header .navbar {
     background-color: var(--color2);
@@ -322,7 +322,9 @@ div.pre-load {
   /* #header .barsup {
     background: rgb(162 32 213 / 52%);
   } */
-
+#header .navbar-light .navbar-nav .nav-link{
+  color:#0000008c;
+}
 }
 
 

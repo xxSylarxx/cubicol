@@ -96,6 +96,7 @@
             font-size: 16px;
             font-weight: bold;
             font-family: 'Nunito Sans', sans-serif;
+            margin-top: 2rem;
         }
 
         #slider .btn:hover {
@@ -714,12 +715,60 @@
                 display: none;
             }
         }
+         @media (max-width: 430px) {
+             #slider .titleContainer {
+                position: absolute;
+                left: 2%;
+                top: -60px;
+                width: 100%;
+               /*  background: rgb(162 32 213 / 20%); */
+                height: 100%;
 
-        @media (max-width: 700px) {
+            }
+
+
+            #slider img {
+                object-position: right;
+                height: auto;
+            }
+
+            #slider .titleContainer .title {
+                font-size: .8rem;
+            }
+
+            #slider .titleContainer .title2 {
+                display: none;
+            }
+
+            #slider .btn {
+                margin-top: -5px!important;
+                padding: 5px 10px;
+                font-size: .8rem;
+            }
+
+            #migrar {
+                padding-bottom: 0;
+            }
+
+            #migrar .circulo {
+                display: none;
+            }
+
+            #colegios .cole1,
+            #colegios .cole2 {
+                display: none;
+            }
+
+            #prefootServicios h2 {
+                font-size: 40px;
+            }
+        }
+
+        @media screen and (min-width:430px) and (max-width: 700px) {
             #slider .titleContainer {
                 position: absolute;
                 left: 5%;
-                top: -20px;
+                top: -90px;
                 width: 100%;
                /*  background: rgb(162 32 213 / 20%); */
                 height: 100%;
@@ -802,14 +851,14 @@
             <img src="img/icons/cubo.png" width="77">
         </div>
     </div>
-
-    <div class="aviso-cookies" id="aviso-cookies">
+<?php include_once './partials/cookies.php'; ?>
+    <!-- <div class="aviso-cookies" id="aviso-cookies">
         <p> Al hacer clic en "Aceptar cookies", concedes permiso al almacenamiento de cookies en su dispositivo para mejorar la navegación del sitio web, analizar su uso y mejorar nuestras acciones de marketing. </p>
         <div class="container-modal-cookies-btns">
             <a href="cookies"> <button class="btn-politics-cookies">Política de cookies</button> </a>
             <button id="btn-acept-cookies" class="btn-acept-cookies">Aceptar cookies</button>
         </div>
-    </div>
+    </div> -->
 
     <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
@@ -823,7 +872,7 @@
                             <h2 class="title2">
                                 En Cubicol, estamos orgullosos de haber sido reconocidos <br> como la mejor Plataforma de Gestión Educativa del año. </b>
                             </h2>
-                            <div class="mt-4 mt-md-5">
+                            <div>
                                 <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Más Información</a>
                             </div>
                         </div>
@@ -1409,7 +1458,7 @@
     <?php include_once './partials/footer.php'; ?>
 
 
-    <script src="./public/js/aviso-cookies.js"></script>
+    <!-- <script src="./public/js/aviso-cookies.js"></script> -->
     <script src="./public/js/jquery.min.js"></script>
 
     <script>

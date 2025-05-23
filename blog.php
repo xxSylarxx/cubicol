@@ -593,7 +593,7 @@
             }
         }
 
-        @media (max-width: 500px) {}
+       
 
         div[id] {
             scroll-margin-top: 150px;
@@ -626,8 +626,8 @@
             <div class="row mt-4 d-flex justify-content-center">
                 <div class="col-md-4 p-md-4 my-3 my-md-0">
                     <div class="item">
-                        <!-- <a class="descripcion mb-4">BLOG CUBICOL</a> -->
-                        <div class="div-img-blog">
+                        <a class="descripcion mb-4">NOTICIAS Y NOVEDADES</a>
+                        <div class="div-img-blog mt-3">
                             <img src="./public/img/galeria/p-blog-1.jpg" alt="">
                         </div>
                         <h4 class="titulo">Premio Empresa Peruana del Año 2024</h4>
