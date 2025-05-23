@@ -778,7 +778,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
                                 En Cubicol, estamos orgullosos de haber sido reconocidos <br> como  la mejor Plataforma de Gestión Educativa del año. </b>
                             </h2>
                             <div class="mt-4 mt-md-5">
-                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Solicita tu demo</a>
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Más Información</a>
                             </div>
                         </div>
                     </div>
