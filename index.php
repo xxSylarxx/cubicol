@@ -66,7 +66,8 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
 
         #slider .titleContainer .title {
             font-size: 40px;
-            color: #fff;
+            color: #fff;    
+            margin-top: -25rem;
         }
 
         #slider .titleContainer .title2 {
@@ -95,7 +96,7 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
 
         #slider img {
             width: 100%;
-            height: 660px;
+            height: 730px; 
             object-fit: cover;
             object-position: top;
             /* height: 100%; */
