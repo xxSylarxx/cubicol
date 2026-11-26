@@ -4,12 +4,17 @@
         background: #fff;
         /* background: var(--color2); */
         box-shadow: 0 3px 3px rgba(94, 94, 94, 0.20);
+		text-shadow: none!important;
     }
 
     .abajo .navbar-light .navbar-nav .nav-link {
         /* color: var(--color2); */
         color: #000 !important;
+		text-shadow: none!important;
     }
+	#header .navbar-light .navbar-nav .nav-link {
+		text-shadow: none!important;
+	}
 
     .abajo .barsup {
         display: none;
@@ -89,12 +94,12 @@
                     <!-- <li class="nav-item">
                         <a class="nav-link text-black" href="nota">La Nota Cubicol</a>
                     </li> -->
-                    <li class="nav-item">
+                    <!--li class="nav-item">
                         <a class="nav-link text-black" href="servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-black" href="agencia">Agencia</a>
-                    </li>
+                    </li-->
                     <li class="nav-item">
                         <a class="nav-link text-black" href="contacto">Contáctanos</a>
                     </li>

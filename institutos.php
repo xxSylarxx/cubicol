@@ -1125,6 +1125,97 @@
             });
         }
     </script>
+ <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": ["EducationalOrganization", "SoftwareApplication"],
+            "name": "Cubicol - Plataforma para Colegios",
+            "alternateName": "Cubicol Institutos",
+            "description": "Sistema integral de gestión escolar que conecta a directivos, docentes, alumnos y padres de familia con módulos académicos, financieros y de comunicación en tiempo real.",
+            "url": "https://www.cubicol.pe/institutos",
+            "logo": "https://www.cubicol.pe/public/img/icons/cubicol-logo-blanco.svg",
+            "foundingDate": "2015",
+            "founder": {
+                "@type": "Organization",
+                "name": "Cubicol"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "47",
+                "reviewCount": "32"
+            },
+            "keywords": [
+                "Plataforma de gestión educativa",
+                "Software de gestión escolar",
+                "Sistema de gestión académica",
+                "Plataforma para colegios",
+                "Plataforma educativa en Perú",
+                "Software para colegios",
+                "Plataforma de gestión educativa para colegios de inicial, primaria y secundaria",
+                "Software de gestión escolar en Perú",
+                "Sistema de notas y asistencia para colegios",
+                "Plataforma para gestión académica y administrativa escolar",
+                "Sistema de comunicación entre padres y colegios",
+                "Plataforma para reportes académicos escolares",
+                "Herramienta para subir notas al SIAGIE",
+                "Plataforma para profesores y directores de colegios",
+                "Sistema educativo para integrar aulas virtuales y administración",
+                "Contratar software de gestión escolar",
+                "Precio plataforma educativa para colegios",
+                "Comprar software escolar en Perú",
+                "Mejor plataforma de gestión educativa",
+                "Cubicol: software para colegios en Perú",
+                "software para colegios",
+                "plataforma educativa",
+                "gestión escolar digital",
+                "comunicación colegio-familia",
+                "sistema de notas online"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "San Borja Norte 500",
+                "addressLocality": "Lima",
+                "addressRegion": "Lima",
+                "postalCode": "15021",
+                "addressCountry": "PE"
+            },
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+51902779069",
+                "contactType": "atención al cliente",
+                "email": "ventas@sensoft.com.pe",
+                "areaServed": "PE",
+                "availableLanguage": "es"
+            }, {
+                "@type": "ContactPoint",
+                "contactType": "ventas",
+                "email": "ventas@sensoft.com.pe        "
+            }],
+            "sameAs": [
+                "https://www.facebook.com/cubicolperu/",
+                "https://www.instagram.com/cubicolperu/"
+            ],
+            "offers": {
+                "@type": "Offer",
+                "category": "SoftwareApplication",
+                "price": "0",
+                "priceCurrency": "PEN",
+                "url": "https://www.cubicol.pe/servicios"
+            },
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": ["Web Browser", "Android", "iOS"],
+            "featureList": [
+                "Gestión académica",
+                "Comunicación institucional",
+                "Plataforma móvil",
+                "Sistema de pagos integrado",
+                "Clases virtuales"
+            ]
+        }
+    </script>
 </body>
 
 </html>

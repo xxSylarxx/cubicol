@@ -2,36 +2,29 @@
 <html lang="es">
 
 <head>
-    <!-- Meta Pixel Code -->
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1585956215157863');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1585956215157863');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cubicol para colegios es la plataforma ideal que comunica a padres de familia, estudiantes, docentes y directivos, con la más alta tecnología.">
+    <meta name="description" content="Cubicol - La plataforma educativa líder que conecta colegios, padres y estudiantes. Gestión académica, aula virtual, pagos y más. ¡Solicita una demo gratuita!">
+    <meta name="keywords" content="Plataforma de gestión educativa, Software de gestión escolar, Sistema de gestión académica, Plataforma para colegios, Plataforma educativa en Perú, Software para colegios, Plataforma de gestión educativa para colegios de inicial, primaria y secundaria, Software de gestión escolar en Perú, Sistema de notas y asistencia para colegios, Plataforma para gestión académica y administrativa escolar, Sistema de comunicación entre padres y colegios, Plataforma para reportes académicos escolares, Herramienta para subir notas al SIAGIE, Plataforma para profesores y directores de colegios, Sistema educativo para integrar aulas virtuales y administración, Contratar software de gestión escolar, Precio plataforma educativa para colegios, Comprar software escolar en Perú, Mejor plataforma de gestión educativa, Cubicol: software para colegios en Perú, Software para colegios, Plataforma educativa, Gestión escolar digital, Comunicación colegio-familia, Sistema de notas online">
+    <link rel="canonical" href="https://www.cubicol.pe/" />
     <link rel="shortcut icon" href="./public/img/icons/escudo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -64,15 +57,14 @@
             position: absolute;
             /* left: 10%; */
             /* padding-left: 10%; */
-
-            left: 10%;
-            bottom: 10%;
+            left: -10%;
+			top:-15%;
+            right: 0;
             display: flex;
             justify-content: start;
             align-items: end;
-            height: 50%;
+            height: 100%;
             padding-bottom: 2%;
-            z-index: 99;
         }
 
         #slider .titleContainer .title {
@@ -96,7 +88,6 @@
             font-size: 16px;
             font-weight: bold;
             font-family: 'Nunito Sans', sans-serif;
-            margin-top: 2rem;
         }
 
         #slider .btn:hover {
@@ -107,11 +98,11 @@
 
         #slider img {
             width: 100%;
-            /* height: 730px;  */
+            height: 660px;
             object-fit: cover;
             object-position: center;
             /* height: 100%; */
-            height: 100vh;
+            /* height: 100vh; */
         }
 
 
@@ -715,82 +706,19 @@
                 display: none;
             }
         }
-         @media (max-width: 430px) {
-             #slider .titleContainer {
-                position: absolute;
-                left: 2%;
-                top: -60px;
-                width: 100%;
-               /*  background: rgb(162 32 213 / 20%); */
-                height: 100%;
 
-            }
-
-
-            #slider img {
-                object-position: right;
-                height: auto;
-            }
-
-            #slider .titleContainer .title {
-                font-size: .8rem;
-            }
-
-            #slider .titleContainer .title2 {
-                display: none;
-            }
-
-            #slider .btn {
-                margin-top: -5px!important;
-                padding: 5px 10px;
-                font-size: .8rem;
-            }
-
-            #migrar {
-                padding-bottom: 0;
-            }
-
-            #migrar .circulo {
-                display: none;
-            }
-
-            #colegios .cole1,
-            #colegios .cole2 {
-                display: none;
-            }
-
-            #prefootServicios h2 {
-                font-size: 40px;
-            }
-        }
-
-        @media screen and (min-width:430px) and (max-width: 700px) {
+        @media (max-width: 500px) {
             #slider .titleContainer {
-                position: absolute;
-                left: 5%;
-                top: -90px;
-                width: 100%;
-               /*  background: rgb(162 32 213 / 20%); */
-                height: 100%;
-
+                padding-bottom: 20%;
+                background: rgb(162 32 213 / 20%);
             }
-
 
             #slider img {
                 object-position: right;
-                height: auto;
             }
 
             #slider .titleContainer .title {
-                font-size: 1rem;
-            }
-
-            #slider .titleContainer .title2 {
-                display: none;
-            }
-
-            #slider .btn {
-                padding: 5px 10px;
+                font-size: 30px;
             }
 
             #migrar {
@@ -810,27 +738,6 @@
                 font-size: 40px;
             }
 
-        }
-
-        @media screen and (min-width: 703px) and (max-width: 900px) {
-            #slider .titleContainer .title {
-                font-size: 1rem;
-            }
-
-            #slider .titleContainer .title2 {
-                font-size: .95rem;
-            }
-
-        }
-
-        @media screen and (min-width: 901px) and (max-width: 1360px) {
-            #slider .titleContainer .title {
-                font-size: 1.7rem;
-            }
-
-            #slider .titleContainer .title2 {
-                font-size: .95rem;
-            }
         }
 
         div[id] {
@@ -851,35 +758,34 @@
             <img src="img/icons/cubo.png" width="77">
         </div>
     </div>
-<?php include_once './partials/cookies.php'; ?>
-    <!-- <div class="aviso-cookies" id="aviso-cookies">
+
+    <div class="aviso-cookies" id="aviso-cookies">
         <p> Al hacer clic en "Aceptar cookies", concedes permiso al almacenamiento de cookies en su dispositivo para mejorar la navegación del sitio web, analizar su uso y mejorar nuestras acciones de marketing. </p>
         <div class="container-modal-cookies-btns">
             <a href="cookies"> <button class="btn-politics-cookies">Política de cookies</button> </a>
             <button id="btn-acept-cookies" class="btn-acept-cookies">Aceptar cookies</button>
         </div>
-    </div> -->
+    </div>
 
     <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
-    <div class="container-fluid px-0" id="slider" style="position: relative;">
+    <div class="container-fluid px-0" id="slider">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+				<div class="carousel-item active">
                     <div class="titleContainer container">
                         <div class="animate__animated animate__fadeInLeft">
-                            <h2 class="title">¡Ganadores del Premio <br> Empresa Peruana del año 2024!</h2>
-                            <h2 class="title2">
-                                En Cubicol, estamos orgullosos de haber sido reconocidos <br> como la mejor Plataforma de Gestión Educativa del año. </b>
-                            </h2>
-                            <div>
-                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Más Información</a>
+                            <h2 class="title">TODO LO QUE PASA EN TU COLEGIO, <br>EN UNA SOLA PLATAFORMA.</h2>
+                            <h2 class="title2">Simplifica la gestión académica, automatiza la cobranza <br> con facturación SUNAT, y conecta a toda tu comunidad con nuestra <br> aula virtual y app móvil. 100% adaptado a colegios e
+institutos.                   </h2>
+                            <div class="mt-4 mt-md-5">
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Solicitar Demo Gratuita</a>
                             </div>
                         </div>
                     </div>
-                    <img src="./public/img/banner/banner-cubicol.jpg">
+                    <img src="./public/img/banner/banner_2027.jpeg">
                 </div>
-                <!-- <div class="carousel-item">
+                <!--div class="carousel-item active">
                     <div class="titleContainer container">
                         <div class="animate__animated animate__fadeInLeft">
                             <h2 class="title">La plataforma número 1 <br> en Gestión Educativa</h2>
@@ -894,9 +800,8 @@
                         </div>
                     </div>
                     <img src="./public/img/banner/1.jpg">
-                </div> -->
-
-                <!-- <div class="carousel-item">
+                </div-->
+                <!--div class="carousel-item">
                     <div class="titleContainer container">
                         <div class="animate__animated animate__fadeInLeft">
                             <h2 class="title">Conoce nuestra <br> Agencia Publicitaria</h2>
@@ -906,22 +811,22 @@
                                 en el mundo digital, así como manejar tus redes sociales.
                             </h2>
                             <div class="mt-4 mt-md-5">
-                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Conoce nuestra área </a> -->
-                <!-- <a class="btn" href="https://api.whatsapp.com/send?phone=51" target="_blank">Contáctanos</a> -->
-                <!--  </div>
+                                <a class="btn" href="https://api.whatsapp.com/send?phone=51902779069&text=Estoy%20visitando%20la%20pagina%20web%20y%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank">Conoce nuestra área </a>
+                               <a class="btn" href="https://api.whatsapp.com/send?phone=51" target="_blank">Contáctanos</a>
+                            </div>
                         </div>
                     </div>
                     <img src="./public/img/banner/2.jpg">
-                </div> -->
+                </div-->
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button> -->
+            </button>
         </div>
     </div>
 
@@ -1144,7 +1049,7 @@
                     <div class="row justify-content-around gap-4">
                         <div class="col-lg-5 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                             <div class="d-flex">
-                                <div class="contador_cantidad text-center" data-cantidad-total="1200">700</div>
+                                <div class="contador_cantidad text-center" data-cantidad-total="1200">1100</div>
                                 <div>
                                     <i class="fas fa-plus"></i>
                                 </div>
@@ -1155,7 +1060,7 @@
                         </div>
                         <div class="col-lg-5 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                             <div class="d-flex">
-                                <div class="contador_cantidad text-center" data-cantidad-total="15">0</div>
+                                <div class="contador_cantidad text-center" data-cantidad-total="15 ">0</div>
                                 <div>
                                     <i class="fas fa-plus"></i>
                                 </div>
@@ -1166,7 +1071,7 @@
                         </div>
                         <div class="col-lg-5 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                             <div class="d-flex">
-                                <div class="contador_cantidad text-center" data-cantidad-total="15">0</div>
+                                <div class="contador_cantidad text-center" data-cantidad-total="18">0</div>
                                 <div>
                                     <i class="fas fa-plus"></i>
                                 </div>
@@ -1295,7 +1200,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <img style="border-radius: 10px;" src="./public/img/web/1200.png" height="80" alt="">
+                    <img style="border-radius: 10px;" src="./public/img/web/800.png" height="80" alt="">
                     <div class="d-flex justify-content-center my-4">
                         <span class="line"></span>
                         <span class="line-white"></span>
@@ -1370,7 +1275,7 @@
         </div>
     </div>
 
-    <!-- <div class="container-fluid bg-white">
+    <!--div class="container-fluid bg-white">
         <div class="container" id="partners">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
@@ -1381,9 +1286,9 @@
                         <span class="line-white"></span>
                         <span class="line"></span>
                     </div>
-                    <h2 class="mt-5">Partners Cubicol</h2> -->
-    <!-- <p>Confían en Cubicol</p> -->
-    <!--  </div>
+                    <h2 class="mt-5">Partners Cubicol</h2>
+                    <p>Confían en Cubicol</p>
+                </div>
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-lg">
@@ -1410,7 +1315,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div-->
 
     <div class="container-fluid" id="prefootServicios">
         <div class="container">
@@ -1448,7 +1353,8 @@
                 </div> -->
                 <div class="modal-body p-0">
                     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/aphaMYrGH1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/aphaMYrGH1o" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!--iframe width="100%" height="500" src="https://www.youtube.com/embed/aphaMYrGH1o" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe-->
+					<iframe width="100%" height="500" src="https://www.youtube.com/embed/E20E3NDnOhg?si=pHpoql3VP0bUB47A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -1458,7 +1364,7 @@
     <?php include_once './partials/footer.php'; ?>
 
 
-    <!-- <script src="./public/js/aviso-cookies.js"></script> -->
+    <script src="./public/js/aviso-cookies.js"></script>
     <script src="./public/js/jquery.min.js"></script>
 
     <script>
@@ -1570,7 +1476,97 @@
             })
         })
     </script>
-
+<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": ["EducationalOrganization", "SoftwareApplication"],
+            "name": "Cubicol - Plataforma para Colegios",
+            "alternateName": "Cubicol Colegios",
+            "description": "Sistema integral de gestión escolar que conecta a directivos, docentes, alumnos y padres de familia con módulos académicos, financieros y de comunicación en tiempo real.",
+            "url": "https://www.cubicol.pe/",
+            "logo": "https://www.cubicol.pe/public/img/icons/cubicol-logo-blanco.svg",
+            "foundingDate": "2015",
+            "founder": {
+                "@type": "Organization",
+                "name": "Cubicol"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "47",
+                "reviewCount": "32"
+            },
+            "keywords": [
+                "Plataforma de gestión educativa",
+                "Software de gestión escolar",
+                "Sistema de gestión académica",
+                "Plataforma para colegios",
+                "Plataforma educativa en Perú",
+                "Software para colegios",
+                "Plataforma de gestión educativa para colegios de inicial, primaria y secundaria",
+                "Software de gestión escolar en Perú",
+                "Sistema de notas y asistencia para colegios",
+                "Plataforma para gestión académica y administrativa escolar",
+                "Sistema de comunicación entre padres y colegios",
+                "Plataforma para reportes académicos escolares",
+                "Herramienta para subir notas al SIAGIE",
+                "Plataforma para profesores y directores de colegios",
+                "Sistema educativo para integrar aulas virtuales y administración",
+                "Contratar software de gestión escolar",
+                "Precio plataforma educativa para colegios",
+                "Comprar software escolar en Perú",
+                "Mejor plataforma de gestión educativa",
+                "Cubicol: software para colegios en Perú",
+                "software para colegios",
+                "plataforma educativa",
+                "gestión escolar digital",
+                "comunicación colegio-familia",
+                "sistema de notas online"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "San Borja Norte 500",
+                "addressLocality": "Lima",
+                "addressRegion": "Lima",
+                "postalCode": "15021",
+                "addressCountry": "PE"
+            },
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+51902779069",
+                "contactType": "atención al cliente",
+                "email": "ventas@sensoft.com.pe",
+                "areaServed": "PE",
+                "availableLanguage": "es"
+            }, {
+                "@type": "ContactPoint",
+                "contactType": "ventas",
+                "email": "ventas@sensoft.com.pe        "
+            }],
+            "sameAs": [
+                "https://www.facebook.com/cubicolperu/",
+                "https://www.instagram.com/cubicolperu/"
+            ],
+            "offers": {
+                "@type": "Offer",
+                "category": "SoftwareApplication",
+                "price": "0",
+                "priceCurrency": "PEN",
+                "url": "https://www.cubicol.pe/servicios"
+            },
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": ["Web Browser", "Android", "iOS"],
+            "featureList": [
+                "Gestión académica",
+                "Comunicación institucional",
+                "Plataforma móvil",
+                "Sistema de pagos integrado",
+                "Clases virtuales"
+            ]
+        }
+    </script>
 </body>
 
 </html>

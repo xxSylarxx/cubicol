@@ -263,9 +263,13 @@ div.pre-load {
   background-color: var(--color3);
 
 }
+/*#header {
+    background: linear-gradient(180deg, rgba(22, 13, 66, 0.65) 0%, rgba(22, 13, 66, 0) 100%);
+}*/
 
 #header .navbar-light .navbar-nav .nav-link{
-  color: white;
+  color: #FFFFFF;
+   text-shadow: 0 2px 6px rgba(15, 10, 45, 0.75);
   font-size: 16px;
   /* text-transform: uppercase; */
   font-weight: bold;
@@ -284,7 +288,7 @@ div.pre-load {
  font-family: 'Nunito Sans', sans-serif;
 }
 
-@media (max-width: 769px) { 
+@media (max-width: 500px) { 
 
   .aviso-cookies.activo{
     flex-direction: column;
@@ -307,9 +311,9 @@ div.pre-load {
     width: 80px;
   }
 
-  /* #navbarNav{
+  #navbarNav{
     background: var(--color2);
-  } */
+  }
 
   /* #header .navbar {
     background-color: var(--color2);
@@ -322,9 +326,7 @@ div.pre-load {
   /* #header .barsup {
     background: rgb(162 32 213 / 52%);
   } */
-#header .navbar-light .navbar-nav .nav-link{
-  color:#0000008c;
-}
+
 }
 
 

@@ -9,6 +9,7 @@
     .abajo .navbar-light .navbar-nav .nav-link {
         /* color: var(--color2); */
         color: #000 !important;
+		 text-shadow: none!important;
     }
 
     .abajo .barsup {
@@ -87,12 +88,12 @@
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="nota">La Nota Cubicol</a>
                     </li> -->
-                    <li class="nav-item">
+                    <!--li class="nav-item">
                         <a class="nav-link" href="/servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/agencia">Agencia</a>
-                    </li>
+                    </li-->
                     <li class="nav-item">
                         <a class="nav-link" href="/contacto">Contáctanos</a>
                     </li>

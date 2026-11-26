@@ -671,7 +671,7 @@
                     </div>
                     <h2>Cubicol es la mejor <br> solución <br> las instituciones educativas</h2>
                     <p class="mt-4">
-                        Nuestro equipo cuenta con más de 15 años de experiencia en software para colegios, facilitando el trabajo de más de 1200 clientes que reciben atención inmediata y seguimiento constante de forma personalizada 24/7.
+                        Nuestro equipo cuenta con más de 14 años de experiencia en software para colegios, facilitando el trabajo de más de 800 clientes que reciben atención inmediata y seguimiento constante de forma personalizada 24/7.
                     </p>
 
                     <div class="d-flex align-items-center mt-4">
@@ -767,7 +767,7 @@
         <div class="row justify-content-around" data-aos="fade-down">
             <div class="col-lg-2 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                 <div class="d-flex">
-                    <div class="contador_cantidad text-center" data-cantidad-total="1200">700</div>
+                    <div class="contador_cantidad text-center" data-cantidad-total="1100">1200</div>
                     <div>
                         <i class="fas fa-plus"></i>
                     </div>
@@ -789,7 +789,7 @@
             </div>
             <div class="col-lg-2 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                 <div class="d-flex">
-                    <div class="contador_cantidad text-center" data-cantidad-total="15">0</div>
+                    <div class="contador_cantidad text-center" data-cantidad-total="18">0</div>
                     <div>
                         <i class="fas fa-plus"></i>
                     </div>
@@ -815,7 +815,7 @@
     <div class="container" id="colegios">
         <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
-                <img style="border-radius: 10px;" src="./public/img/web/1200.png" height="80" alt="">
+                <img style="border-radius: 10px;" src="./public/img/web/boton-mas-120.jpeg" height="80" alt="">
                 <div class="d-flex justify-content-center my-4">
                     <span class="line"></span>
                     <span class="line-white"></span>
@@ -1018,6 +1018,77 @@
                 observer.observe(elementoHTML)
             })
         })
+    </script>
+	<script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": ["EducationalOrganization", "SoftwareApplication"],
+            "name": "Cubicol - Plataforma para Colegios",
+            "alternateName": "Cubicol Institutos",
+            "description": "Sistema integral de gestión escolar que conecta a directivos, docentes, alumnos y padres de familia con módulos académicos, financieros y de comunicación en tiempo real.",
+            "url": "https://www.cubicol.pe/nosotros",
+            "logo": "https://www.cubicol.pe/public/img/icons/cubicol-logo-blanco.svg",
+            "foundingDate": "2015",
+            "founder": {
+                "@type": "Organization",
+                "name": "Cubicol"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "47",
+                "reviewCount": "32"
+            },
+            "keywords": [
+                "software para colegios",
+                "plataforma educativa",
+                "gestión escolar digital",
+                "comunicación colegio-familia",
+                "sistema de notas online"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "San Borja Norte 500",
+                "addressLocality": "Lima",
+                "addressRegion": "Lima",
+                "postalCode": "15021",
+                "addressCountry": "PE"
+            },
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+51982558347",
+                "contactType": "atención al cliente",
+                "email": "administracion@cubicol.pe",
+                "areaServed": "PE",
+                "availableLanguage": "es"
+            }, {
+                "@type": "ContactPoint",
+                "contactType": "ventas",
+                "email": "ventas@cubicol.pe"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/cubicolperu/",
+                "https://www.instagram.com/cubicolperu/"
+            ],
+            "offers": {
+                "@type": "Offer",
+                "category": "SoftwareApplication",
+                "price": "0",
+                "priceCurrency": "PEN",
+                "url": "https://www.cubicol.pe/servicios"
+            },
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": ["Web Browser", "Android", "iOS"],
+            "featureList": [
+                "Gestión académica",
+                "Comunicación institucional",
+                "Plataforma móvil",
+                "Sistema de pagos integrado",
+                "Clases virtuales"
+            ]
+        }
     </script>
 </body>
 
