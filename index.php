@@ -624,15 +624,16 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
             padding-bottom: 5rem;
         }
 
-        #partners .item img {
-            filter: contrast(0%);
-            /* filter: grayscale(100%); */
-            /* filter: saturate(1%); */
-            transition: .3s all ease;
+        #partners .item {
+            padding: 0 1.5rem;
         }
 
-        #partners .item:hover img {
-            filter: contrast(100%);
+        #partners .item img {
+            width: 100%;
+            height: 80px;
+            object-fit: contain;
+            object-position: center;
+            transition: .3s all ease;
         }
 
         #prefootServicios {
@@ -854,7 +855,7 @@ institutos.                   </h2>
                             Admisión, Pensiones </b> y mucho más desde la web o a <br> través de nuestra app.
                     </p>
 
-                    <div class="d-flex align-items-center mt-4">
+                    <div class="d-flex align-items-center mt-4 d-none">
                         <a class="video grow" data-bs-toggle="modal" data-bs-target="#modalVideoCubicol">
                             <i class="fas fa-play"></i>
                         </a>
@@ -862,7 +863,10 @@ institutos.                   </h2>
                     </div>
                 </div>
                 <div class="col-lg-6 position-relative">
-                    <img src="./public/img/web/bienvenido.png" width="100%" alt="">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/E20E3NDnOhg?si=pHpoql3VP0bUB47A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <!-- <img src="./public/img/web/bienvenido.png" width="100%" alt=""> -->
                     <!-- <img class="imgRocket" src="./public/img/web/rocket.png" alt=""> -->
                 </div>
             </div>
@@ -1049,7 +1053,7 @@ institutos.                   </h2>
                     <div class="row justify-content-around gap-4">
                         <div class="col-lg-5 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                             <div class="d-flex">
-                                <div class="contador_cantidad text-center" data-cantidad-total="1200">1100</div>
+                                <div class="contador_cantidad text-center" data-cantidad-total="1300">1400</div>
                                 <div>
                                     <i class="fas fa-plus"></i>
                                 </div>
@@ -1275,7 +1279,7 @@ institutos.                   </h2>
         </div>
     </div>
 
-    <!--div class="container-fluid bg-white">
+    <div class="container-fluid bg-white">
         <div class="container" id="partners">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
@@ -1286,36 +1290,54 @@ institutos.                   </h2>
                         <span class="line-white"></span>
                         <span class="line"></span>
                     </div>
-                    <h2 class="mt-5">Partners Cubicol</h2>
-                    <p>Confían en Cubicol</p>
+                    <h2 class="mt-5">Integraciones</h2>
+                    <!--p>Confían en Cubicol</p-->
                 </div>
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-lg">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
-                            <img src="./public/img/web/partners/Client_1_maxpaper.png" alt="">
+                            <img src="./public/img/integraciones/PAGOEFECTIVO.svg" alt="Pagoefectivo">
                         </div>
                         <div class="item">
-                            <img src="./public/img/web/partners/Client_2_laborator.png" alt="">
+                            <img src="./public/img/integraciones/VISA.svg" alt="Visa">
                         </div>
                         <div class="item">
-                            <img src="./public/img/web/partners/Client_3_honeyhosting.png" alt="">
+                            <img src="./public/img/integraciones/MASTERCARD.svg" alt="Mastercard">
                         </div>
                         <div class="item">
-                            <img src="./public/img/web/partners/Client_4_cryptonite.png" alt="">
+                            <img src="./public/img/integraciones/FLOW.svg" alt="Flow">
+                        </div>
+                        <!-- <div class="item">
+                            <img src="./public/img/integraciones/PLIN.svg" alt="Plin">
                         </div>
                         <div class="item">
-                            <img src="./public/img/web/partners/Client_5_dynamic.png" alt="">
+                            <img src="./public/img/integraciones/YAPE.svg" alt="Yape">
+                        </div> -->
+                        <div class="item">
+                            <img src="./public/img/integraciones/ZOOM.svg" alt="Zoom">
                         </div>
                         <div class="item">
-                            <img src="./public/img/web/partners/Client_6_deters-1.png" alt="">
+                            <img src="./public/img/integraciones/MEETS.svg" alt="Meets">
+                        </div>
+                        <div class="item">
+                            <img src="./public/img/integraciones/TEAMS.svg" alt="Teams">
+                        </div>
+                        <div class="item">
+                            <img src="./public/img/integraciones/SIAGIE.svg" alt="Siagie">
+                        </div>
+                        <div class="item">
+                            <img src="./public/img/integraciones/SUNAT.svg" alt="Sunat">
+                        </div>
+                        <div class="item">
+                            <img src="./public/img/integraciones/lectora.jpeg" alt="Lectora">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div-->
+    </div>
 
     <div class="container-fluid" id="prefootServicios">
         <div class="container">
@@ -1413,7 +1435,7 @@ institutos.                   </h2>
                     items: 2
                 },
                 1000: {
-                    items: 5
+                    items: 6
                 }
             }
         })

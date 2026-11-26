@@ -767,7 +767,7 @@
         <div class="row justify-content-around" data-aos="fade-down">
             <div class="col-lg-2 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                 <div class="d-flex">
-                    <div class="contador_cantidad text-center" data-cantidad-total="1100">1200</div>
+                    <div class="contador_cantidad text-center" data-cantidad-total="1400">1300</div>
                     <div>
                         <i class="fas fa-plus"></i>
                     </div>
@@ -815,7 +815,7 @@
     <div class="container" id="colegios">
         <div class="row justify-content-center">
             <div class="col-lg-6 text-center">
-                <img style="border-radius: 10px;" src="./public/img/web/boton-mas-120.jpeg" height="80" alt="">
+                <img style="border-radius: 10px;" src="./public/img/web/boton-mas-1400.jpeg" height="80" alt="">
                 <div class="d-flex justify-content-center my-4">
                     <span class="line"></span>
                     <span class="line-white"></span>
