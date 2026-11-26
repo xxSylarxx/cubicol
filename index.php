@@ -1073,7 +1073,7 @@ institutos.                   </h2>
                     <div class="row justify-content-around gap-4">
                         <div class="col-lg-5 col-8 my-md-0 my-4 d-flex justify-content-center align-items-center d-md-block contador">
                             <div class="d-flex">
-                                <div class="contador_cantidad text-center" data-cantidad-total="1300">1400</div>
+                                <div class="contador_cantidad text-center" data-cantidad-total="1400">1300</div>
                                 <div>
                                     <i class="fas fa-plus"></i>
                                 </div>
