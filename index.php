@@ -55,37 +55,42 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
         #slider .titleContainer {
             /* background: rgb(0 0 0 / 10%); */
             position: absolute;
-            /* left: 10%; */
-            /* padding-left: 10%; */
-            left: -10%;
-			top:-15%;
+            top: 0;
+            left: 0;
             right: 0;
+            max-width: none;
             display: flex;
             justify-content: start;
-            align-items: end;
+            align-items: center;
             height: 100%;
-            padding-bottom: 2%;
+            /* deja libres las flechas del slider (prev/next) */
+            padding: 0 9%;
+            padding-top: 8%;
+        }
+
+        #slider .titleContainer>div {
+            max-width: 52%;
         }
 
         #slider .titleContainer .title {
-            font-size: 40px;
+            font-size: clamp(22px, 3.1vw, 44px);
             color: #fff;
         }
 
         #slider .titleContainer .title2 {
-            font-size: 18px;
+            font-size: clamp(13px, 1.4vw, 19px);
             color: #fff;
             border-left: 6px solid #20DAF3;
             padding-left: 16px;
             font-weight: lighter;
-            margin-top: 3rem;
+            margin-top: clamp(1rem, 2.5vw, 3rem);
         }
 
         #slider .btn {
             background-color: var(--color1);
             color: #fff;
-            padding: 20px 36px;
-            font-size: 16px;
+            padding: clamp(10px, 1.5vw, 20px) clamp(18px, 2.7vw, 36px);
+            font-size: clamp(13px, 1.2vw, 16px);
             font-weight: bold;
             font-family: 'Nunito Sans', sans-serif;
         }
@@ -315,11 +320,13 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
             background-size: 20%;
             background-position: 110% 20%;
             background-repeat: no-repeat;
+            overflow-x: clip;
         }
 
         #migrar .circulo {
-            height: 540px;
-            width: 540px;
+            /* se reduce en pantallas chicas; 150px = espacio para los iconos laterales (sobresalen 60px c/lado) */
+            height: min(540px, calc(100vw - 150px));
+            width: min(540px, calc(100vw - 150px));
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -710,8 +717,12 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
 
         @media (max-width: 500px) {
             #slider .titleContainer {
-                padding-bottom: 20%;
+                padding: 0 14%;
                 background: rgb(162 32 213 / 20%);
+            }
+
+            #slider .titleContainer>div {
+                max-width: 100%;
             }
 
             #slider img {
@@ -719,7 +730,16 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
             }
 
             #slider .titleContainer .title {
-                font-size: 30px;
+                font-size: 24px;
+            }
+
+            #slider .titleContainer .title2 {
+                font-size: 13px;
+            }
+
+            #slider .titleContainer .title2 br,
+            #slider .titleContainer .title br {
+                display: none;
             }
 
             #migrar {
