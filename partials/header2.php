@@ -29,6 +29,108 @@
         background: #992d2f;
     }
 
+    /* boton hamburguesa sin sombras */
+    #header .navbar-toggler,
+    #header .navbar-toggler:focus {
+        box-shadow: none !important;
+        outline: none;
+    }
+
+    /* menu lateral derecho con X (tablet/movil). Se controla con el JS de abajo, no con collapse de Bootstrap */
+    #header .menu-close,
+    #header .menu-backdrop {
+        display: none;
+    }
+
+    @media (max-width: 991px) {
+        #header #navbarNav {
+            display: block !important;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: min(320px, 85vw);
+            margin: 0;
+            padding: 4.5rem 1.5rem 2rem;
+            background: #010000;
+            overflow-y: auto;
+            transform: translateX(100%);
+            transition: transform .3s ease;
+            z-index: 1050;
+        }
+
+        #header #navbarNav.open {
+            transform: translateX(0);
+        }
+
+        #header .menu-close {
+            display: block;
+            position: absolute;
+            top: 1rem;
+            right: 1.25rem;
+            background: none;
+            border: 0;
+            color: #fff;
+            font-size: 28px;
+            line-height: 1;
+            padding: .25rem .5rem;
+            box-shadow: none;
+            cursor: pointer;
+        }
+
+        #header .menu-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .5);
+            z-index: 1040;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .3s ease;
+        }
+
+        #header .menu-backdrop.open {
+            display: block;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        #header #navbarNav .navbar-nav .nav-link,
+        #header.abajo #navbarNav .navbar-nav .nav-link,
+        #header #navbarNav .dropdown-item {
+            color: #fff !important;
+            text-shadow: none !important;
+        }
+
+        #header #navbarNav .navbar-nav .nav-item {
+            margin: 0;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, .15);
+        }
+
+        #header #navbarNav .navbar-nav .nav-item:last-child {
+            border-bottom: 0;
+        }
+
+        #header #navbarNav .navbar-nav .nav-link {
+            padding: .85rem 0;
+            width: 100%;
+        }
+
+        /* submenu Productos: dentro del panel, sin popper */
+        #header #navbarNav .dropdown-menu {
+            position: static !important;
+            transform: none !important;
+            background: rgba(255, 255, 255, .1);
+            border: 0;
+            margin: 0 0 .75rem;
+        }
+
+        #header #navbarNav .dropdown-item:hover,
+        #header #navbarNav .dropdown-item:focus {
+            background: rgba(255, 255, 255, .15);
+        }
+    }
+
     @media (max-width: 500px) {
         #slider .titleContainer {
             padding-bottom: 78%;
@@ -70,10 +172,12 @@
             <a class="navbar-brand" href="/">
                 <img class="logo1" src="./public/img/icons/cubicol-logo-negro.svg" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="menuToggle" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="menu-backdrop" id="menuBackdrop"></div>
             <div class="collapse navbar-collapse" id="navbarNav">
+                <button class="menu-close" id="menuClose" type="button" aria-label="Cerrar menú">&times;</button>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link text-black" aria-current="page" href="/">Cubicol</a>
@@ -109,6 +213,43 @@
     </nav>
 
 </header>
+
+<script>
+    // menu lateral (tablet/movil)
+    (function() {
+        var panel = document.getElementById('navbarNav');
+        var backdrop = document.getElementById('menuBackdrop');
+        var toggle = document.getElementById('menuToggle');
+
+        function setMenu(open) {
+            panel.classList.toggle('open', open);
+            backdrop.classList.toggle('open', open);
+            toggle.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        }
+        toggle.addEventListener('click', function() {
+            setMenu(!panel.classList.contains('open'));
+        });
+        document.getElementById('menuClose').addEventListener('click', function() {
+            setMenu(false);
+        });
+        backdrop.addEventListener('click', function() {
+            setMenu(false);
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') setMenu(false);
+        });
+        // cierra al elegir un enlace (el desplegable "Productos" no cuenta)
+        panel.querySelectorAll('a[href]:not([data-bs-toggle])').forEach(function(a) {
+            a.addEventListener('click', function() {
+                setMenu(false);
+            });
+        });
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 991) setMenu(false);
+        });
+    })();
+</script>
 
 <script type="text/javascript">
     window.addEventListener("scroll", function() {

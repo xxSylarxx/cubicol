@@ -716,17 +716,25 @@ src="https://www.facebook.com/tr?id=1585956215157863&ev=PageView&noscript=1"
         }
 
         @media (max-width: 500px) {
+            /* movil: sin imagen, fondo azul solido para que el texto se lea */
+            #slider .carousel-item {
+                background: #3B31FF;
+            }
+
+            #slider .carousel-item>img {
+                display: none;
+            }
+
             #slider .titleContainer {
-                padding: 0 14%;
-                background: rgb(162 32 213 / 20%);
+                position: static;
+                height: auto;
+                /* arriba: espacio para el header fijo */
+                padding: 9rem 14% 4rem;
+                background: none;
             }
 
             #slider .titleContainer>div {
                 max-width: 100%;
-            }
-
-            #slider img {
-                object-position: right;
             }
 
             #slider .titleContainer .title {
@@ -1224,7 +1232,7 @@ institutos.                   </h2>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <img style="border-radius: 10px;" src="./public/img/web/800.png" height="80" alt="">
+                    <img style="border-radius: 10px;" src="./public/img/web/boton-mas-1400.jpeg" height="80" alt="">
                     <div class="d-flex justify-content-center my-4">
                         <span class="line"></span>
                         <span class="line-white"></span>
